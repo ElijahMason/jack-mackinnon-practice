@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software | Jack MacKinnon</title>
+  <meta name="description" content="Jack MacKinnon writes software that assumes the room was designed. The desk is part of the system.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sheet.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to sheet</a>
+  <div class="board">
+    <article class="sheet">
+      <p class="ruler-x" aria-hidden="true"><span>0</span><span>20</span><span>40</span><span>60</span><span>80</span></p>
+      <p class="ruler-y" aria-hidden="true"><span>0</span><span>20</span><span>40</span><span>60</span></p>
+      <header class="sheet-head">
+        <p class="mark">JM <span>Dwg</span></p>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-controls="sheet-nav" hidden>Sheets</button>
+        <nav id="sheet-nav" class="sheet-nav" data-nav aria-label="Sheets">
+          <a href="index.html">A-01 Practice</a>
+          <a href="room.html">A-02 Room</a>
+          <a href="software.html" aria-current="page">A-03 Software</a>
+          <a href="standards.html">A-04 Standards</a>
+          <a href="contact.html">A-05 Contact</a>
+        </nav>
+      </header>
+      <main id="content">
+        <h1>Software that assumes the room was designed.</h1>
+        <p class="standfirst">Jack writes the software for the teams whose rooms he builds. The program may trust the labels, the screen count, and the clear desk. It may not invent a name the cable does not carry. The desk is part of the system.</p>
+        <p>He does not hand over a tool and leave the furniture to chance. The install and the code are one practice. You can trace a port from the label on the desk to the same name on the screen.</p>
+        <h2>What the software is allowed to assume</h2>
+        <ol class="notes">
+          <li>The port name in the tool matches the label at both ends of the cable.</li>
+          <li>The screen count in the tool is the screen count on the desk, including an arm that stays inside the edge.</li>
+          <li>A status the tool shows has a place to land on the bench, not only a row you cannot find.</li>
+          <li>The workflow matches how paper, parts, and files actually move across that desk.</li>
+        </ol>
+        <h2>What he refuses to pretend</h2>
+        <p>The interface is not a substitute for a route. If the cable is unlabeled, the software does not guess. If the desk cannot be cleared, the workflow does not assume a clear surface. Fix the room, then let the program rely on it.</p>
+        <figure class="figure-block">
+          <svg class="plan" viewBox="0 0 760 200" role="img" aria-labelledby="soft-title soft-desc">
+            <title id="soft-title">How a name moves from the cable to the screen to the desk</title>
+            <desc id="soft-desc">Illustration of a principle. Three stations on one line: port label, screen count, and a place on the desk. Not a photograph of a product.</desc>
+            <line x1="70" y1="70" x2="690" y2="70" stroke="#2c2e33" stroke-width="1.5"/>
+            <circle cx="90" cy="70" r="6" fill="#2c2e33"/>
+            <circle cx="380" cy="70" r="6" fill="#2c2e33"/>
+            <circle cx="670" cy="70" r="6" fill="none" stroke="#f0c419" stroke-width="3"/>
+            <text x="90" y="110" fill="#2c2e33" font-family="Familjen Grotesk, sans-serif" font-size="16" text-anchor="middle">Port label</text>
+            <text x="380" y="110" fill="#2c2e33" font-family="Familjen Grotesk, sans-serif" font-size="16" text-anchor="middle">Screen count</text>
+            <text x="670" y="110" fill="#2c2e33" font-family="Familjen Grotesk, sans-serif" font-size="16" text-anchor="middle">Place on the desk</text>
+            <text x="90" y="150" fill="#2c2e33" font-family="Source Serif 4, serif" font-size="15" text-anchor="middle">Both ends agree</text>
+            <text x="380" y="150" fill="#2c2e33" font-family="Source Serif 4, serif" font-size="15" text-anchor="middle">The room decides</text>
+            <text x="670" y="150" fill="#2c2e33" font-family="Source Serif 4, serif" font-size="15" text-anchor="middle">The work can land</text>
+          </svg>
+          <figcaption>Illustration of a principle. A name moves from the cable to the screen to a place on the desk. Not a product shot.</figcaption>
+        </figure>
+      </main>
+      <footer class="title-block">
+        <table>
+          <caption>Title block</caption>
+          <tbody>
+            <tr><th scope="row">Practice</th><td>Jack MacKinnon</td></tr>
+            <tr><th scope="row">Sheet</th><td>A-03</td></tr>
+            <tr><th scope="row">Title</th><td>Software</td></tr>
+            <tr><th scope="row">Motto</th><td>The desk is part of the system.</td></tr>
+            <tr><th scope="row">Scale</th><td>Illustration, not to scale</td></tr>
+            <tr><th scope="row">Record</th><td>Principle. Not a finished room.</td></tr>
+          </tbody>
+        </table>
+      </footer>
+    </article>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>
