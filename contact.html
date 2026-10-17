@@ -3,82 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Jack MacKinnon</title>
+  <title>Ticket | Jack MacKinnon</title>
   <meta name="description" content="Write a brief for Jack MacKinnon. The form copies it onto the page. The desk is part of the system.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/sheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,700;1,9..144,560&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/press.css">
 </head>
 <body>
-  <a class="skip" href="#content">Skip to sheet</a>
-  <div class="board">
-    <article class="sheet">
-      <p class="ruler-x" aria-hidden="true"><span>0</span><span>20</span><span>40</span><span>60</span><span>80</span></p>
-      <p class="ruler-y" aria-hidden="true"><span>0</span><span>20</span><span>40</span><span>60</span></p>
-      <header class="sheet-head">
-        <p class="mark">JM <span>Dwg</span></p>
-        <button type="button" class="nav-toggle" data-nav-toggle aria-controls="sheet-nav" hidden>Sheets</button>
-        <nav id="sheet-nav" class="sheet-nav" data-nav aria-label="Sheets">
-          <a href="index.html">A-01 Practice</a>
-          <a href="room.html">A-02 Room</a>
-          <a href="software.html">A-03 Software</a>
-          <a href="standards.html">A-04 Standards</a>
-          <a href="contact.html" aria-current="page">A-05 Contact</a>
+  <a class="skip" href="#content">Skip to the form</a>
+  <div class="table">
+    <div class="signature">
+      <div class="crop tl" aria-hidden="true"></div>
+      <div class="crop tr" aria-hidden="true"></div>
+      <div class="crop bl" aria-hidden="true"></div>
+      <div class="crop br" aria-hidden="true"></div>
+      <div class="regmark" aria-hidden="true"><span class="c"></span><span class="m"></span></div>
+      <header class="run">
+        <p class="sig">JM / SIG 05</p>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-controls="plate-nav" hidden>Plates</button>
+        <nav id="plate-nav" class="plates" data-nav aria-label="Plates">
+          <a href="index.html">01 Cover</a>
+          <a href="register.html">02 Register</a>
+          <a href="arm.html">03 Arm</a>
+          <a href="practice.html">04 Practice</a>
+          <a href="contact.html" aria-current="page">05 Ticket</a>
         </nav>
       </header>
       <main id="content">
-        <h1>Write the brief.</h1>
-        <p class="standfirst">Tell Jack MacKinnon what the room is doing and what the software needs to do. The form writes a brief, copies it, and shows it on this page. This site does not store it. The desk is part of the system.</p>
+        <h1>Job ticket.</h1>
+        <p class="lede">Tell Jack MacKinnon what the room is doing and what the software needs to do. The form writes a brief, copies it, and shows it here. This site does not store it. The desk is part of the system.</p>
         <p data-mail-note>Mail is not configured. The brief stays on this page until you copy it and send it yourself.</p>
         <form data-brief-form>
-          <div class="field">
+          <div class="ticket-row">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
           </div>
-          <div class="field">
+          <div class="ticket-row">
             <label for="team">Team</label>
             <input id="team" name="team" type="text" autocomplete="organization">
           </div>
-          <fieldset>
+          <fieldset class="ticket-row">
             <legend>Work</legend>
-            <label class="choice"><input type="checkbox" name="work" value="Workspace layout"> Workspace layout</label>
-            <label class="choice"><input type="checkbox" name="work" value="Mounts"> Mounts</label>
-            <label class="choice"><input type="checkbox" name="work" value="Lighting"> Lighting</label>
-            <label class="choice"><input type="checkbox" name="work" value="Cable routes"> Cable routes</label>
-            <label class="choice"><input type="checkbox" name="work" value="Office workflow"> Office workflow</label>
-            <label class="choice"><input type="checkbox" name="work" value="Software"> Software</label>
+            <div>
+              <label class="choice"><input type="checkbox" name="work" value="Workspace layout"> Workspace layout</label>
+              <label class="choice"><input type="checkbox" name="work" value="Mounts"> Mounts</label>
+              <label class="choice"><input type="checkbox" name="work" value="Lighting"> Lighting</label>
+              <label class="choice"><input type="checkbox" name="work" value="Cable routes"> Cable routes</label>
+              <label class="choice"><input type="checkbox" name="work" value="Office workflow"> Office workflow</label>
+              <label class="choice"><input type="checkbox" name="work" value="Software"> Software</label>
+            </div>
           </fieldset>
-          <div class="field">
-            <label for="note">What the room and the software need to do</label>
+          <div class="ticket-row">
+            <label for="note">Note</label>
             <textarea id="note" name="note" required></textarea>
           </div>
           <button type="submit">Copy the brief</button>
           <p data-brief-status role="status"></p>
           <div data-brief-panel hidden>
-            <div class="field">
+            <div class="ticket-row">
               <label for="brief-copy">Brief on this page</label>
               <textarea id="brief-copy" data-brief-output readonly></textarea>
             </div>
             <p><a data-brief-mail hidden>Open a message</a></p>
           </div>
         </form>
+        <footer class="colophon">
+          <span>Jack MacKinnon</span>
+          <span>The desk is part of the system.</span>
+        </footer>
       </main>
-      <footer class="title-block">
-        <table>
-          <caption>Title block</caption>
-          <tbody>
-            <tr><th scope="row">Practice</th><td>Jack MacKinnon</td></tr>
-            <tr><th scope="row">Sheet</th><td>A-05</td></tr>
-            <tr><th scope="row">Title</th><td>Contact</td></tr>
-            <tr><th scope="row">Motto</th><td>The desk is part of the system.</td></tr>
-            <tr><th scope="row">Scale</th><td>Illustration, not to scale</td></tr>
-            <tr><th scope="row">Record</th><td>Principle. Not a finished room.</td></tr>
-          </tbody>
-        </table>
-      </footer>
-    </article>
+    </div>
   </div>
   <script src="js/site.js"></script>
 </body>
