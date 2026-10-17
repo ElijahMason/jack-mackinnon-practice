@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work order | Jack MacKinnon</title>
+  <meta name="description" content="Write a brief for Jack MacKinnon. The form copies it onto the page. The desk is part of the system.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+  <a class="skip" href="#bench">Skip to the bench</a>
+  <div class="shop">
+    <header class="rail">
+      <p class="who">Jack MacKinnon</p>
+      <h1>Write the order.</h1>
+      <p class="motto">The desk is part of the system. The brief stays on this page.</p>
+      <nav aria-label="Bench">
+        <a href="index.html">Index</a>
+        <a href="bench.html">Surface</a>
+        <a href="routes.html">Routes</a>
+        <a href="code.html">Code</a>
+        <a href="contact.html" aria-current="page">Work order</a>
+      </nav>
+      <a class="to-bench" href="#bench">Read the sheet</a>
+    </header>
+    <main id="bench" class="floor">
+      <article class="lit">
+        <p>Tell Jack what the room is doing and what the software needs to do. The form writes a brief, copies it, and shows it in the light. This site does not store it.</p>
+        <p data-mail-note>Mail is not configured. The brief stays on this page until you copy it and send it yourself.</p>
+        <form data-brief-form>
+          <div class="order-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="order-row">
+            <label for="team">Team</label>
+            <input id="team" name="team" type="text" autocomplete="organization">
+          </div>
+          <fieldset class="order-row">
+            <legend>Work</legend>
+            <div>
+              <label class="choice"><input type="checkbox" name="work" value="Workspace layout"> Workspace layout</label>
+              <label class="choice"><input type="checkbox" name="work" value="Mounts"> Mounts</label>
+              <label class="choice"><input type="checkbox" name="work" value="Lighting"> Lighting</label>
+              <label class="choice"><input type="checkbox" name="work" value="Cable routes"> Cable routes</label>
+              <label class="choice"><input type="checkbox" name="work" value="Office workflow"> Office workflow</label>
+              <label class="choice"><input type="checkbox" name="work" value="Software"> Software</label>
+            </div>
+          </fieldset>
+          <div class="order-row">
+            <label for="note">Note</label>
+            <textarea id="note" name="note" required></textarea>
+          </div>
+          <button type="submit">Copy the brief</button>
+          <p data-brief-status role="status"></p>
+          <div data-brief-panel hidden>
+            <div class="order-row">
+              <label for="brief-copy">Brief on this page</label>
+              <textarea id="brief-copy" data-brief-output readonly></textarea>
+            </div>
+            <p><a data-brief-mail hidden>Open a message</a></p>
+          </div>
+        </form>
+      </article>
+    </main>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>
